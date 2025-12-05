@@ -5,6 +5,10 @@
 ## TODO
 
 - [ ] write shell.sh script 
+- [ ] check i3 config
+- [ ] check xfce4 config 
+- [ ] write autoinstall script programs
+
 
 
 # My dotfiles
@@ -28,12 +32,12 @@ apt-get install stow
 ## Installation
 
 ```
-$ git clone git@github.com:john-sth/dotfiles.git
-$ cd dotfiles
+git clone git@github.com:john-sth/dotfiles.git
+cd dotfiles
 ```
 
 then use GNU stow to create symlinks
 
 ```
-$ stow .
+stow .
 ```
