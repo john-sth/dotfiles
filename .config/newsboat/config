@@ -1,0 +1,61 @@
+#john's newsboat configuration file 
+# get full article with https://morss.it/ 
+# default configuration
+auto-reload yes
+browser "firefox %u"
+download-full-page yes
+keep-articles-days 4
+reload-time 10
+show-read-articles yes
+swap-title-and-hints yes
+show-keymap-hint no
+
+# unbind keys
+unbind-key j
+unbind-key k
+unbind-key J
+unbind-key K
+
+# bind keys - vim style
+bind-key j down
+bind-key k up
+bind-key l open
+bind-key h quit
+
+# g/G to go to top/bottom
+unbind-key g
+unbind-key G
+bind-key g home
+bind-key G end
+
+macro m set browser "mpv %u"; open-in-browser ; set browser "firefox"
+
+
+
+# Dark solarized color scheme for newsbeuter, based on
+# Ethan Schoonover's Solarized.
+# In order to use this color scheme, you must first configure
+# your terminal emulator to use the Solarized palette.
+# See <http://ethanschoonover.com/solarized/> for more information.
+
+color background         default   default
+color listnormal         default   default
+color listnormal_unread  default   default
+color listfocus          black     yellow
+color listfocus_unread   black     yellow
+color info               default   black
+color article            default   default
+#
+## highlights
+highlight article "^(Title):.*$" blue default
+highlight article "https?://[^ ]+" red default
+highlight article "\\[image\\ [0-9]+\\]" green default
+
+# a simple newsbeuter color scheme.
+#color listnormal        white black
+#color listnormal_unread white black
+#color listfocus         yellow red bold
+#color listfocus_unread  yellow red bold
+#color info              cyan blue
+#color background        white black
+#color article           white black
