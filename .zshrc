@@ -176,8 +176,8 @@ eval "$(zoxide init zsh)"
 
 export FZF_DEFAULT_OPTS="--preview 'cat {}' --bind 'ctrl-j:down,ctrl-k:up,alt-j:preview-down,alt-k:preview-up' --border=rounded"
 
-source /usr/share/fzf/examples/completion.zsh
-source /usr/share/fzf/examples/key-bindings.zsh 
+source /usr/share/doc/fzf/examples/completion.zsh
+source /usr/share/doc/fzf/examples/key-bindings.zsh 
 
 
 source $HOME/.aliasrc
